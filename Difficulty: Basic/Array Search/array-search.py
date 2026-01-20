@@ -1,7 +1,10 @@
+
+from typing import List
+
 class Solution:
-    def search(self, arr, x):
+    def search(self, k: int, arr: List[int]) -> int:
         # code here
-        try:
-            return arr.index(x)
-        except:
-            return -1
+        for i in range(len(arr)):
+            if arr[i] == k:return i+1
+        return -1
+        
